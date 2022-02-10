@@ -1,11 +1,11 @@
 # Requirements
-To properly run this project, 
-1- You need to first run a json server by executing the command:
-json-server --watch dbdisetereta.json
-2- Edit your dbdisetereta.json file to look like this:
-{
+To properly run this project, <br>
+1- Run a json server by executing the command: <br>
+`json-server --watch dbdisetereta.json`<br>
+2- Edit your dbdisetereta.json file to look like this:<br>
+`{
   "days": []
-}
+}`<br>
 ENJOY!
 
 # Disererta
