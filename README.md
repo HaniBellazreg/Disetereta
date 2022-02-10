@@ -1,5 +1,14 @@
-# Disererta
+# Requirements
+To properly run this project, 
+1- You need to first run a json server by executing the command:
+json-server --watch dbdisetereta.json
+2- Edit your dbdisetereta.json file to look like this:
+{
+  "days": []
+}
+ENJOY!
 
+# Disererta
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
 
 ## Development server
