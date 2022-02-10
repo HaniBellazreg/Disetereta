@@ -1,0 +1,22 @@
+<h1>Disererta</h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center bg-info p-3" > <h1 class="text-white">{{today | date:'MMMM Y'}}</h1></div>
+    </div>
+    
+    <div class="row justify-content-around" *ngFor="let rowDays of newDaysArr let i = index">
+        <div class="col-sm-3 mt-1 bg-secondary text-white rounded" *ngFor="let day of newDaysArr[i]" >
+           <p class="text-left mt-2"> {{day.dayNumber}} </p> 
+            <div class="row">
+            <button mat-raised-button (click)="openDialog(day.dayNumber, '7AM - 3PM', 0)" type="button" class=" col-sm-10 btn {{getShiftColor(day.dayNumber, 0)}} mt-1 mx-2 ">7AM - 3PM</button>
+            <button mat-raised-button (click)="openDialog(day.dayNumber, '3PM - 11PM', 1)" type="button" class="col-sm-10 btn {{getShiftColor(day.dayNumber, 1)}} mt-1 mx-2">3PM - 11PM</button>
+            <button mat-raised-button (click)="openDialog(day.dayNumber, '11PM - 7AM', 2)" type="button" class=" col-sm-10 btn {{getShiftColor(day.dayNumber, 2)}} mt-1 mx-2 mb-2">11PM - 7AM</button>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+

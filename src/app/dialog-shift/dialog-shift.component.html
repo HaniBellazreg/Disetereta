@@ -1,0 +1,9 @@
+<h1>
+    Fevrier {{selectedDayNumber}} - {{selectedShift}} 
+</h1>
+    Doctor 1: <input type="text" value="{{fDoctor}}" id="firstDoctor" name="firstDoctor" #firstDoctor>
+    Doctor 2: <input type="text" value="{{sDoctor}}" id="secondDoctor" name="secondDoctor" #secondDoctor>
+    Doctor 3: <input type="text" value="{{tDoctor}}" id="thirdDoctor" name="thirdDoctor" #thirdDoctor>
+
+    <Button value="Save" (click)="saveDoctors(firstDoctor.value, secondDoctor.value, thirdDoctor.value)">Save</Button>
+    <button value="Cancel" >Cancel</button>
